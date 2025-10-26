@@ -39,7 +39,7 @@
             this.landingScreenP1.Dock = System.Windows.Forms.DockStyle.Left;
             this.landingScreenP1.Location = new System.Drawing.Point(0, 0);
             this.landingScreenP1.Name = "landingScreenP1";
-            this.landingScreenP1.Size = new System.Drawing.Size(337, 866);
+            this.landingScreenP1.Size = new System.Drawing.Size(337, 822);
             this.landingScreenP1.TabIndex = 0;
             // 
             // landingScreenP2
@@ -64,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 866);
+            this.ClientSize = new System.Drawing.Size(1269, 822);
             this.Controls.Add(this.loggedAssestsLabel);
             this.Controls.Add(this.landingScreenP2);
             this.Controls.Add(this.landingScreenP1);
