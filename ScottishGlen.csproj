@@ -99,6 +99,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAsset.Designer.cs">
+      <DependentUpon>AddAsset.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asset.cs" />
     <Compile Include="DatabaseManager.cs" />
     <Compile Include="Employee.cs" />
@@ -122,6 +128,9 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAsset.resx">
+      <DependentUpon>AddAsset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
