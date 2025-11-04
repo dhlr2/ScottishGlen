@@ -69,8 +69,16 @@ namespace ScottishGlen
 
         private void assetMenuBtn_Click(object sender, EventArgs e)
         {
-            
-
+            headingLbl.Text = "Assets";
+            listViewAssets.View = View.Details;
+            listViewAssets.FullRowSelect = true;
+            listViewAssets.GridLines = true;
+            listViewAssets.Columns.Clear();
+            listViewAssets.Columns.Add("ID", 50);
+            listViewAssets.Columns.Add("Name", 150);
+            listViewAssets.Columns.Add("Purchase Date", 100);
+            listViewAssets.Columns.Add("Employee Id", 100);
+            listViewAssets.Columns.Add("Notes", 100);
         }
 
         private void employeeMenuBtn_Click(object sender, EventArgs e)
