@@ -16,6 +16,11 @@ namespace ScottishGlen
         public string password { get; set; }
         public int departmentId { get; set; }
 
+        /// <summary>
+        /// validates the specified employee details to ensure it meets the required criteria.
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns>valid employee</returns>
         private bool ValidateEmployee(Employee employee)
         {
             if (string.IsNullOrWhiteSpace(employee.firstName) ||
@@ -33,6 +38,15 @@ namespace ScottishGlen
                 return true;
             }
         }
+
+        /// <summary>
+        /// Adds a new employee to the database after validating the provided employee details.
+        /// </summary>
+        /// <remarks>Displays a success message if the employee is registered successfully. If validation
+        /// fails, a warning message is shown. In case of an error during the database operation, an error message is
+        /// displayed.</remarks>
+        /// <param name="employee">The employee object containing details such as first name, last name, email, password, and department ID.
+        /// Cannot be null.</param>
         public void addEmployeeToDatabase(Employee employee)
         {
             try
